@@ -152,13 +152,12 @@ module.exports = function(eleventyConfig) {
    *
    * @link https://www.11ty.io/docs/copy/
    */
-  eleventyConfig.addPassthroughCopy("./src/assets/img/*.jpeg");
-  eleventyConfig.addPassthroughCopy("./src/assets/img/*.jpg");
-  eleventyConfig.addPassthroughCopy("./src/assets/img/*.png");
+  eleventyConfig.addPassthroughCopy("./src/assets/img");
+  eleventyConfig.addPassthroughCopy("./src/assets/img/bg-noise.png");
   eleventyConfig.addPassthroughCopy("./src/assets/vendor");
   eleventyConfig.addPassthroughCopy("./src/assets/vids");
-  eleventyConfig.addPassthroughCopy("./src/assets/css/*.css");
-  eleventyConfig.addPassthroughCopy("./src/assets/js/*.js");
+  eleventyConfig.addPassthroughCopy("./src/assets/css");
+  eleventyConfig.addPassthroughCopy("./src/assets/js");
   eleventyConfig.addPassthroughCopy({"node_modules/mermaid/dist/mermaid.min.js": "/assets/scripts/vendors/mermaid.min.js"});
   eleventyConfig.addPassthroughCopy("./src/robots.txt");
   eleventyConfig.addPassthroughCopy("./src/manifest.json");
@@ -211,8 +210,8 @@ module.exports = function(eleventyConfig) {
    * @link https://www.11ty.dev/docs/watch-serve/
    */
   // Watch JS
-  eleventyConfig.addWatchTarget('./src/assets/scripts/index.js');
-  eleventyConfig.addWatchTarget('./src/assets/styles/main.css');
+  eleventyConfig.addWatchTarget('./src/assets/js/theme.js');
+  eleventyConfig.addWatchTarget('./src/assets/css/theme.css');
 
   /**
    * Override BrowserSync Server options

@@ -152,7 +152,9 @@ module.exports = function(eleventyConfig) {
    *
    * @link https://www.11ty.io/docs/copy/
    */
-  eleventyConfig.addPassthroughCopy("./src/assets/img");
+  eleventyConfig.addPassthroughCopy("./src/assets/img/*.jpeg");
+  eleventyConfig.addPassthroughCopy("./src/assets/img/*.jpg");
+  eleventyConfig.addPassthroughCopy("./src/assets/img/*.png");
   eleventyConfig.addPassthroughCopy("./src/assets/vendor");
   eleventyConfig.addPassthroughCopy("./src/assets/vids");
   eleventyConfig.addPassthroughCopy("./src/assets/css/*.css");

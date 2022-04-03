@@ -1,8 +1,8 @@
 {
-  "name": "Yetty",
-  "short_name": "Yetty",
-  "theme_color": "#ffffff",
-  "background_color": "#004740",
+  "name": "Magica Nocturna",
+  "short_name": "Magica Nocturna",
+  "theme_color": "#000000",
+  "background_color": "#000000",
   "display": "fullscreen",
   "orientation": "portrait",
   "scope": "/",

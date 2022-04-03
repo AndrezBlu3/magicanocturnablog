@@ -152,8 +152,11 @@ module.exports = function(eleventyConfig) {
    *
    * @link https://www.11ty.io/docs/copy/
    */
-  eleventyConfig.addPassthroughCopy("./src/assets/images");
-  eleventyConfig.addPassthroughCopy("./src/assets/styles/*.css");
+  eleventyConfig.addPassthroughCopy("./src/assets/img");
+  eleventyConfig.addPassthroughCopy("./src/assets/vendor");
+  eleventyConfig.addPassthroughCopy("./src/assets/vids");
+  eleventyConfig.addPassthroughCopy("./src/assets/css/*.css");
+  eleventyConfig.addPassthroughCopy("./src/assets/js/*.js");
   eleventyConfig.addPassthroughCopy({"node_modules/mermaid/dist/mermaid.min.js": "/assets/scripts/vendors/mermaid.min.js"});
   eleventyConfig.addPassthroughCopy("./src/robots.txt");
   eleventyConfig.addPassthroughCopy("./src/manifest.json");

@@ -9,7 +9,7 @@
     "build": "npm run clean && npm run eleventy:prod",
     "postbuild": "npm run postcss",
     "predev": "npm run sass:dev && npm run modernizr",
-    "dev": "concurrently 'npm run eleventy:dev' 'npm run sass:watch'",
+    "dev": "npm run eleventy:dev && npm run sass:watch",
     "start": "npm run dev",
     "debug": "DEBUG=* eleventy",
     "postcss": "postcss dist/assets/styles/main.css --replace",
